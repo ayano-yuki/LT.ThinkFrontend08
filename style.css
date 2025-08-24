@@ -6,7 +6,6 @@
 :root {
   width: 1280px;
   height: 720px;
-  font-size: 50px;
   color: #4d4053;
 }
 
@@ -53,7 +52,7 @@ section.title{
   width: 100%;
 }
 section.title h1 {
-  font-size: 80px;
+  font-size: 70px;
   color: #4d4053;
   margin: 0;
 }
@@ -65,7 +64,7 @@ section.title h2 {
 }
 
 section.title p {
-  font-size: 30px;
+  font-size: 40px;
   margin: 60px 0 0 0;
 }
 
@@ -97,4 +96,25 @@ section.content1 p {
   white-space: pre-wrap; 
   word-break: break-word;
   margin: 0;
+}
+
+/* デザインパーツ：列数n */
+.container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+.column {
+  flex: 1;
+  padding: 20px;
+  /* background-color: lightgray; */
+  text-align: center;
+}
+
+/* デザインパーツ：色付き下線（ピンク） */
+.text-underline-pink {
+  text-decoration: underline;              /* 下線 */
+  text-decoration-color: #f2abd6;          /* 線の色 */
+  text-decoration-thickness: 1rem;         /* 線の太さ */
+  text-underline-offset: -0.4rem;          /* 線の位置（上げ下げ調整） */
 }
