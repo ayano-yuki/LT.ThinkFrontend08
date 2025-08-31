@@ -1,4 +1,4 @@
-# scripts/pdf2image2pptx_stream.py
+# .github\workflows\pdf2image2pptx.py
 import sys
 import os
 import io
@@ -8,7 +8,7 @@ from pptx.util import Inches
 from PyPDF2 import PdfReader
 from tqdm import tqdm
 
-def pdf_to_pptx_stream(pdf_path, pptx_path, dpi=150, slide_ratio="16:9"):
+def pdf_to_pptx_stream(pdf_path, pptx_path, dpi=400, slide_ratio="16:9"):
     if not os.path.isfile(pdf_path):
         raise FileNotFoundError(f"PDFファイルが見つかりません: {pdf_path}")
 
