@@ -1,10 +1,16 @@
 name: Convert PDF to PPTX
 
-# slide.pdf が更新されたら発火
+# main ブランチに push されたら発火する
 on:
   push:
-    paths:
-      - 'slide.pdf'
+    branches:
+      - main
+
+# slide.pdf が更新されたら発火する
+# on:
+#   push:
+#     paths:
+#       - 'slide.pdf'
 
 jobs:
   convert:
