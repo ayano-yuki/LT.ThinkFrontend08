@@ -63,7 +63,7 @@ section.title h2 {
   margin: 0;
 }
 
-section.title p {
+section.title p div {
   font-size: 40px;
   margin: 60px 0 0 0;
 }
@@ -98,6 +98,41 @@ section.content1 p {
   margin: 0;
 }
 
+/* 表のデザイン */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  display: inline-table;
+  border-collapse: separate;  /* セル間にスペースを作る */
+  border-spacing: 10px 10px;     /* 行間を広げる */
+  font-family: "Arial", sans-serif;
+  width: 80%;
+}
+
+th {
+  padding: 16px 24px;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #77acc0;  /* アプリ風のヘッダー色 */
+  color: white;
+  border-radius: 8px 8px 0 0; /* 上角だけ丸める */
+}
+
+tr:nth-child(n) td {
+  padding: 16px 24px;
+  text-align: center;
+  border-radius: 0 0 8px 8px; /* 下角だけ丸める */
+}
+
+td, th {
+  border: none;
+}
+
+td:nth-child(1) {
+  font-weight: bold;
+}
+
 /* デザインパーツ：列数n */
 .container {
   display: flex;
@@ -114,7 +149,7 @@ section.content1 p {
 /* デザインパーツ：色付き下線（ピンク） */
 .text-underline-pink {
   text-decoration: underline;              /* 下線 */
-  text-decoration-color: #f2abd6;          /* 線の色 */
-  text-decoration-thickness: 1rem;         /* 線の太さ */
-  text-underline-offset: -0.4rem;          /* 線の位置（上げ下げ調整） */
+  text-decoration-color: #77acc0;          /* 線の色 */
+  text-decoration-thickness: 0.5rem;         /* 線の太さ */
+  text-underline-offset: -20%;          /* 線の位置（上げ下げ調整） */
 }

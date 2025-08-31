@@ -1,0 +1,50 @@
+name: Convert PDF to PPTX
+
+# slide.pdf が更新されたら発火
+on:
+  push:
+    paths:
+      - 'slide.pdf'
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. リポジトリを取得
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Python をセットアップ
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.11
+
+      # 3. Poppler をインストール
+      - name: Install Poppler
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      # 4. Python パッケージをインストール
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pdf2image python-pptx tqdm
+
+      # 5. PDF を PPTX に変換
+      - name: Convert PDF to PPTX
+        run: |
+          python .github/workflows/pdf2image2pptx.py slide.pdf slide.pptx
+
+      # 6. 生成した PPTX をアーティファクトとして保存
+      - name: Upload generated PPTX
+        uses: actions/upload-artifact@v4
+        with:
+          name: slide-pptx
+          path: slide.pptx
+
+# ▼ 処理の仕組み（コメント）
+# 1. slide.pdf が更新されるとワークフロー発火
+# 2. Python スクリプトで PDF をページごとに画像化
+# 3. 各画像を PPTX のスライドに貼り付け
+# 4. 生成した slide.pptx を artifact として保存
