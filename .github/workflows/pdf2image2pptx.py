@@ -5,6 +5,7 @@ import io
 from pdf2image import convert_from_path
 from pptx import Presentation
 from pptx.util import Inches
+from PyPDF2 import PdfReader
 from tqdm import tqdm
 
 def pdf_to_pptx_stream(pdf_path, pptx_path, dpi=150, slide_ratio="16:9"):
@@ -23,8 +24,8 @@ def pdf_to_pptx_stream(pdf_path, pptx_path, dpi=150, slide_ratio="16:9"):
         raise ValueError("slide_ratioは '16:9' か '3:4' のみ指定可能です")
 
     # 総ページ数取得
-    first_page_image = convert_from_path(pdf_path, dpi=dpi, first_page=1, last_page=1)[0]
-    total_pages = len(convert_from_path(pdf_path, dpi=dpi, first_page=1, last_page=1))
+    reader = PdfReader(pdf_path)
+    total_pages = len(reader.pages)
 
     # ページごとに処理
     for page_num in tqdm(range(1, total_pages + 1), desc="PDF→PPTX変換"):

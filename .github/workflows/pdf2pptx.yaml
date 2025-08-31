@@ -29,7 +29,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pdf2image python-pptx tqdm
+          pip install pdf2image python-pptx tqdm PyPDF2
 
       # 5. PDF を PPTX に変換
       - name: Convert PDF to PPTX
