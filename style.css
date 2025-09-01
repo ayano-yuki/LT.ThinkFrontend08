@@ -106,7 +106,7 @@ table {
   border-collapse: separate;  /* セル間にスペースを作る */
   border-spacing: 10px 10px;     /* 行間を広げる */
   font-family: "Arial", sans-serif;
-  width: 80%;
+  width: 100%;
 }
 
 th {
@@ -147,9 +147,21 @@ td:nth-child(1) {
 }
 
 /* デザインパーツ：色付き下線（ピンク） */
-.text-underline-pink {
+.text-underline {
   text-decoration: underline;              /* 下線 */
   text-decoration-color: #77acc0;          /* 線の色 */
   text-decoration-thickness: 0.5rem;         /* 線の太さ */
   text-underline-offset: -20%;          /* 線の位置（上げ下げ調整） */
+}
+
+/* デザインパーツ：枠線付きテキスト */
+.framed {
+  display: inline-block;         /* テキスト幅に合わせる */
+  margin: 0 auto;                /* 左右中央寄せ */
+  padding: 30px 30px;             /* 内側余白 */
+  color: #4d4053;                /* 文字色 */
+  background-color: #97daf2;     /* 淡色の塗りつぶし背景 */
+  border: 2px solid #97daf2;     /* 枠線 */
+  border-radius: 12px;           /* 角丸 */
+  text-align: center;
 }
