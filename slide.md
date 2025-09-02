@@ -78,11 +78,43 @@ footer: 'Think Frontend #8'
 | CSS      | スライドのデザインを設定する |
 | HTML     | 細かなレイアウトを設定する |
 
+---
+
+<!-- _class : content1 -->
+# CSS/HTMLの腕試し・練習に使えそう
+
+<style>
+.githubish {
+  width: 400px;
+  height: 400px;
+  display: inline-grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+.github-mark { color: #0d1117; }
+.github-mark .cat { fill: #ffffff; }
+
+h1, div {
+    position: relative; 
+    z-index: 100;
+}
+</style>
+
+<div class="githubish">
+<svg class="github-mark" viewBox="0 0 1024 1024" width="100%" height="100%">
+  <circle cx="512" cy="512" r="500" fill="currentColor" />
+  <path class="cat" d="M512 200c-174 0-316 142-316 316 0 140 91 258 217 300 16 3 22-7 22-16 0-8 0-29-1-57-88 19-107-42-107-42-14-35-34-45-34-45-28-19 2-19 2-19 31 2 47 32 47 32 27 47 72 34 90 26 3-20 11-34 20-42-70-8-143-35-143-155 0-34 12-61 32-83-3-8-14-40 3-83 0 0 27-9 88 32 26-7 54-11 82-11s56 4 82 11c61-41 88-32 88-32 17 43 6 75 3 83 20 22 32 49 32 83 0 120-73 147-143 155 11 9 21 27 21 55 0 40-1 72-1 82 0 9 6 19 22 16 126-42 217-160 217-300 0-174-142-316-316-316z" />
+</svg>
+</div>
+
+<img src="./.image/スクリーンショット 2025-09-02 235309.png" class="background-image" style="opacity: 0.3;">
 
 ---
 
 <!-- _class : content1 -->
-# CSS/HTMLの練習/腕試しに使えそう
+# CSS/HTMLの腕試し・練習に使えそう
 
 デフォルトのテーマ＋Markdown onlyでは、デザイン・レイアウトに限界がある
 
@@ -100,10 +132,7 @@ footer: 'Think Frontend #8'
 ---
 
 <!-- _class : content1 -->
-# 実装してみた
-今回は、DMMが使っているスライドデザインを再現してみます。
-
-
+# スライドマスターを作ってみよう！
 
 ---
 
@@ -185,17 +214,6 @@ footer: 'Think Frontend #8'
 
 <div style="text-align: center; position: relative; z-index: 100;">
     <img src="./.image/fin.png" width="30%">
-    </div>
+</div>
 
-<img src="./.image/background137.webp" 
-    style="
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;  
-    width: 1200px;    
-    height: 641px;
-    z-index: 1;
-    opacity: 0.6;  
-">
+<img src="./.image/background137.webp" class="background-image">
