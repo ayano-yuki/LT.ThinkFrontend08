@@ -132,7 +132,42 @@ h1, div {
 ---
 
 <!-- _class : content1 -->
-# スライドマスターを作ってみよう！
+# スライドを作ってみよう！
+合同会社DMM.comのスライドの表紙を作ってみたので、解説します！
+
+<div style="text-align:center; width:100%;">
+  <img src="./.image/スクリーンショット 2025-09-07 233759.png" style="height:70%; margin-top:15px;">
+</div>
+
+---
+
+<!-- _class : content1 -->
+
+<img src="./.image/スクリーンショット (40).png"  class="background-image" style="opacity: 1;">
+
+---
+
+<!-- _class : content1 -->
+
+<img src="./.image/スクリーンショット (41).png"  class="background-image" style="opacity: 1;">
+
+---
+
+<!-- _class : content1 -->
+
+<img src="./.image/スクリーンショット (42).png"  class="background-image" style="opacity: 1;">
+
+---
+
+<!-- _class : content1 -->
+
+<img src="./.image/スクリーンショット (43).png"  class="background-image" style="opacity: 1;">
+
+---
+
+<!-- _class : content1 -->
+
+<img src="./.image/スクリーンショット (44).png"  class="background-image" style="opacity: 1;">
 
 ---
 
@@ -151,7 +186,6 @@ h1, div {
 - 出力した.pptxの編集は出来るが、**デザインをそのまま再現できない**
   - Marp v4.1.0から出来るようになった
   - フォントの設定だったり、配置が崩れたり...
-
 
 ---
 
