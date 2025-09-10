@@ -1,14 +1,14 @@
 ---
 marp: true
-title: Marpで学ぶCSS/HTML
+title: Marpで学ぶHTML/CSS
 theme: mytheme
 paginate: true
-# header: 'Marpで学ぶCSS/HTML'
+# header: 'Marpで学ぶHTML/CSS'
 footer: 'Think Frontend #8'
 ---
 
 <!-- _class : title -->
-# Marpで学ぶCSS/HTML
+# Marpで学ぶHTML/CSS
 ## Think Frontend #8
 
 合同会社DMM.com 戦略開発本部
@@ -88,7 +88,7 @@ footer: 'Think Frontend #8'
 ---
 
 <!-- _class : content1 -->
-# CSS/HTML次第でデザインが無限大
+# HTML/CSS次第でデザインが無限大
 
 <h2 style="width:100%; text-align: center;"> MarpはMarkdownなので、HTML/CSSが使える！ </h2>
 
@@ -101,7 +101,7 @@ footer: 'Think Frontend #8'
 ---
 
 <!-- _class : content1 -->
-# CSS/HTMLの腕試し・練習に使えそう
+# HTML/CSSの腕試し・練習に使えそう
 
 <style>
 .githubish {
@@ -134,7 +134,7 @@ h1, div {
 ---
 
 <!-- _class : content1 -->
-# CSS/HTMLの腕試し・練習に使えそう
+# HTML/CSSの腕試し・練習に使えそう
 
 デフォルトのテーマ＋Markdown onlyでは、デザイン・レイアウトに限界がある
 
@@ -233,7 +233,7 @@ h1, div {
 # まとめ
 
 - MarpはMarkdownベース で手軽にスライドが作れる  
-- CSS/HTMLを駆使すればデザイン自由度は高く、腕試しにも最適  
+- HTML/CSSを駆使すればデザイン自由度は高く、腕試しにも最適  
 - 課題はPPTX出力の弱さ → PDF変換 + 自動化で実用可能  
 - 他サービスと比較しても、学習コストが低く導入しやすいのが強み  
 
