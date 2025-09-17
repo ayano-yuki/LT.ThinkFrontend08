@@ -22,7 +22,7 @@ footer: 'Think Frontend #8'
 <div style="margin-top:6%;">
     <div style="display: flex; gap: 8px;">
         <h2 style="margin: 0;">平良 昂也</h2>
-        <div>(@__ayanoYuki_)</div>
+        <div style="letter-spacing: 0.05em;">(@__ayanoYuki__)</div>
     </div>
     <ul>
         <li>合同会社DMM.com（2025新卒）

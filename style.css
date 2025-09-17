@@ -152,6 +152,7 @@ td:nth-child(1) {
   text-decoration-color: #77acc0;          /* 線の色 */
   text-decoration-thickness: 0.5rem;         /* 線の太さ */
   text-underline-offset: -20%;          /* 線の位置（上げ下げ調整） */
+  text-decoration-skip-ink: none; /* アルファベットで線が省略されるのを防ぐ */
 }
 
 /* デザインパーツ：枠線付きテキスト */
