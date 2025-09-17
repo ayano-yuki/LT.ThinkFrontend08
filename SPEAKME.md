@@ -47,29 +47,64 @@ HTMLは、Markdownだけでは指定できない細かなレイアウトをCSS�
 
 # Page 08
 
+（ノリで）
 
-# Page 09
-
-
-# Page 10
+# Page 09 - 13
 
 
-# Page 11
-
-
-# Page 12
-
-
-# Page 13
+1. グレー領域（.hero）
+   - レイアウト: flexbox を使って中央寄せ (align-items: center; justify-content: center; flex-direction: column;)。中身が縦方向に整列する。
+   - サイズ: 高さは 70vh（画面の70%）、横幅は 100%。
+   - 背景: 薄いグレー #f5f5f5。
+   - 位置: position: absolute; top: 0; でスライド上部に固定される。
+   - 装飾: 内側余白 padding: 2.5rem 2rem と薄い境界線 border: 1px solid rgba(0,0,0,0.05) がつけられている。
+2. タイトル（.hero h1）
+   - フォント: 太字 (font-weight: 800) で存在感を強調。
+   - サイズ: 2.3rem と大きめだが、やや抑えたサイズ感。
+   - 色: 濃いグレー #111。
+   - 文字間: letter-spacing: -0.01em でわずかに詰めている。
+   - 行間: line-height: 1.25 で読みやすさを確保。
+3. サブタイトル（.hero p.subtitle）
+   - 位置: タイトルから 1.4rem 下に余白を確保。
+   - サイズ: 1.1rem でタイトルより小さめ。
+   - 色: 薄めグレー #888。
+   - 文字スタイル: 中程度の太さ (font-weight: 500) で、タイトルより控えめに見える。
+4. フッター領域（.footer）
+   - レイアウト: flexbox を使用し、左側に情報、右側に「CONFIDENTIAL」タグを配置。
+   - 背景: 白 #fff。
+   - 位置: position: absolute; bottom: 0; width: 100%; でスライドの下部に固定。
+   - 装飾: 上部に境界線 border-top: 1px solid rgba(0,0,0,0.05) が引かれている。
+5. 左の情報（.footer .meta）
+   - 配置: フッター左側で縦方向に並ぶ (flex-direction: column)。
+   - 間隔: 要素間に gap: 0.25rem の余白。
+   - 文字: 小さめ (font-size: 0.82rem)、色は濃いめのグレー #444。
+6. サブテキスト（.footer .meta .sub）
+   - サイズ: さらに小さく 0.72rem。
+   - 色: 薄めのグレー #999 でメイン情報との差別化。
+7. ロゴ部分（.footer .logo）
+   - 配置: 左情報ブロックの下部寄り (margin-top: 0.65rem)。
+   - 文字: 太字 (font-weight: 700) でやや目立つ。
+   - サイズ・色: 小さめの 0.78rem、濃いグレー #111。
+8. CONFIDENTIALタグ（.confidential）
+   - 形状: 丸みを帯びた pill型 (border-radius: 999px)。
+   - サイズ感: 小さめ文字 (font-size: 0.65rem) に余白 (padding: 0.2rem 0.6rem) を付与。
+   - 色: 文字色は赤 #e60012、背景はほぼ透明な薄い赤。境界線も半透明の赤で囲む。
+   - 文字: 太字 (font-weight: 700)、字間を少し広め (letter-spacing: 0.06em)。
+   - 位置: フッター右端に配置され、下寄せのために margin-bottom: 0.2rem。
 
 
 # Page 14
 
+（ノリで）
 
 # Page 15
 
+（ノリで）
 
 # Page 16
 
+（ノリで）
 
 # Page 17
+
+（ノリで）
